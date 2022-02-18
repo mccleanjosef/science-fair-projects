@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background: coral; }
+
+.navigation {
+  height: 10vh;
+  font-size: 2rem; }
+  .navigation__header {
+    padding-right: 5rem;
+    padding-left: 2rem;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 5rem;
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
