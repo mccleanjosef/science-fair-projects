@@ -13,31 +13,38 @@ html{
 
 @import "navigation";
 
+
 .carousel-container {
     width: 600px;
     height: 400px;
     position: relative;
-    margin: 0 auto;
 }
 
-.navigation .prev {
+.icons{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+.icons .prev {
     position: absolute;
     z-index: 10;
     font-size: 25px;
     top: 40%;
-    left: 10px;
+    left: 20px;
     font-weight: 700;
 }
 
-.navigation .next {
-    right: 10px;
+.icons .next {
+    right: 20px;
     position: absolute;
     font-size: 25px;
     z-index: 10;
     top: 40%;
 }
 
-.navigation .nav-btn {
+.icons .nav-btn {
     background: rgba(255, 255, 255, 0.55);
     cursor: pointer;
     border-radius: 50%;
@@ -50,7 +57,7 @@ html{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
-.navigation .nav-btn:hover {
+.icons .nav-btn:hover {
     background: white;
 }
 
