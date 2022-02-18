@@ -9,10 +9,9 @@ html{
     font-size: 62.5%;
 }
 
-body{
-    background: coral;
-    margin-top: 100px;
-}
+// font-family: 'Bangers', cursive;
+
+@import "navigation";
 
 .carousel-container {
     width: 600px;
