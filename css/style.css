@@ -47,4 +47,19 @@ body {
 .navigation .nav-btn:hover {
   background: white; }
 
+.carousel {
+  margin-top: 20px;
+  transition: all 0.3s ease; }
+
+.carousel img {
+  width: 100%;
+  transition: all 0.3s ease; }
+
+.item {
+  position: absolute;
+  display: none; }
+
+.main {
+  display: block; }
+
 /*# sourceMappingURL=style.css.map */
