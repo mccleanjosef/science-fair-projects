@@ -2,6 +2,7 @@ $('document').ready(function(){
 
   console.log("script is linked");
 
+  // start of image-slider
   const prev = document.querySelector('.prev');
   const next = document.querySelector('.next');
   const images = document.querySelector('.carousel').children;
@@ -35,5 +36,36 @@ $('document').ready(function(){
     }
     images[index].classList.add('main');
   }
+    // end of image-slider
+
+
+    // start of student-cards
+    $.ajax({
+        type: "GET",
+        url: "./json/students.json",
+        success: function(data){
+            console.log(data.studentNames);
+
+            function studentLoop(){
+                let i = 0;
+                for(i = 0; i < data.studentNames.length; i++){
+                    generateCard(i);
+                }
+                // modal();
+            }
+            studentLoop();
+
+            function generateCard(x){
+                $('#cardCtn').append(
+                    `
+                    <div class="card c-student-cards__card">
+                      <h2>${data.studentNames[x]}</h2>
+                    </div>
+                    `
+                );
+            }
+        }
+    });
+    // end of student-cards
 
 });
