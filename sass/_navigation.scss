@@ -6,9 +6,13 @@
         padding-right: 5rem;
         padding-left: 2rem;
         color: white;
-        // font-family: $font-face;
+        font-family: 'BrunoAceSC', sans-serif;
         font-size: 5rem;
         font-weight: bold;
+        &:hover{
+            color: lightgray;
+            text-decoration: underline lightgrey;
+        }
     }
 }
 
