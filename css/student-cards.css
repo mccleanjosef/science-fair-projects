@@ -1,0 +1,16 @@
+.c-student-cards {
+  display: flex;
+  flex-flow: row wrap; }
+  .c-student-cards__card {
+    padding: 30px;
+    width: 33.33333333333333%;
+    height: 200px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    background: cadetblue;
+    border: none;
+    border-radius: 0;
+    color: white; }
+
+/*# sourceMappingURL=student-cards.css.map */

@@ -6,5 +6,13 @@
         "CAITLIN K.",
         "NATHAN K.",
         "SAMIRA W."
+    ],
+    "studentImages": [
+        "https://images.pexels.com/photos/7105850/pexels-photo-7105850.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "https://images.pexels.com/photos/7869235/pexels-photo-7869235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/3861973/pexels-photo-3861973.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "https://images.pexels.com/photos/8923745/pexels-photo-8923745.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        "https://images.pexels.com/photos/8472001/pexels-photo-8472001.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+        "https://images.pexels.com/photos/5063444/pexels-photo-5063444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     ]
 }
