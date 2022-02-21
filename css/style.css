@@ -84,10 +84,21 @@ html {
   background-repeat: no-repeat; }
   .header__heading {
     grid-row: 4/5;
-    grid-column: 2/5; }
+    grid-column: 2/9;
+    font-family: BrunoAceSC; }
+  .header-heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 2.5px; }
   .header__subheading {
     grid-row: 5/6;
-    grid-column: 2/5; }
+    grid-column: 2/5;
+    font-family: 'Cambay', sans-serif; }
+  .header-subheading {
+    color: #fff;
+    font-size: 2rem; }
 
 .c-footer {
   display: flex;
@@ -117,6 +128,9 @@ html {
     .c-footer__menu-items:hover {
       text-decoration: underline black; }
 
+@font-face {
+  font-family: BrunoAceSC;
+  src: url(../fonts/bruno_ace_sc_regular.ttf); }
 @font-face {
   font-family: BrunoAceSC;
   src: url(../fonts/bruno_ace_sc_regular.ttf); }
