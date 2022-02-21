@@ -1,0 +1,34 @@
+.c-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 5% 20px 5%;
+    &__title{
+        text-transform: uppercase;
+        font-family: 'BrunoAceSC', sans-serif;
+        font-size: 2.5rem;
+        color: black;
+        &:hover{
+            text-decoration: underline black;
+        }
+    }
+    &__class{
+        font-family: 'Cambay', sans-serif;
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+        color: black;
+    }
+    &__footer-menu{
+        list-style: none;
+        text-transform: uppercase;
+        text-align: right;
+        font-family: 'Cambay', sans-serif;
+        font-size: 1.5rem;
+    }
+    &__menu-items{
+        padding: 0.2rem 0;
+        color: black;
+        &:hover{
+            text-decoration: underline black;
+        }
+    }
+}

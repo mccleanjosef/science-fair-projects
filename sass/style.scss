@@ -1,10 +1,7 @@
-// font-family: 'Bangers', cursive;
+@import "var";
 @import "resets";
 @import "navigation";
 @import "image-slider";
+@import "landing";
+@import "student-cards";
 @import "footer";
-
-@mixin font-face {
-    font-family: BrunoAceSC;
-    src: url(../fonts/bruno_ace_sc_regular.ttf);
-}
