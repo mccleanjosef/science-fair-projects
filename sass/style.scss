@@ -4,7 +4,7 @@
 @import "image-slider";
 @import "footer";
 
-@font-face {
+@mixin font-face {
     font-family: BrunoAceSC;
     src: url(../fonts/bruno_ace_sc_regular.ttf);
 }

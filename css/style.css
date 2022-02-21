@@ -14,9 +14,25 @@ html {
     padding-right: 5rem;
     padding-left: 2rem;
     color: white;
-    font-family: 'Bangers', cursive;
     font-size: 5rem;
     font-weight: bold; }
+
+.navbar-collapse {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem; }
+
+.dropdown-item {
+  font-size: 2rem; }
+
+.dropdown-menu {
+  padding: 2rem; }
+
+.btn {
+  font-size: 2rem;
+  margin-right: 2rem; }
+
+.form-control {
+  font-size: 2rem; }
 
 .carousel-container {
   width: 600px;
@@ -100,9 +116,5 @@ html {
     color: black; }
     .c-footer__menu-items:hover {
       text-decoration: underline black; }
-
-@font-face {
-  font-family: BrunoAceSC;
-  src: url(../fonts/bruno_ace_sc_regular.ttf); }
 
 /*# sourceMappingURL=style.css.map */

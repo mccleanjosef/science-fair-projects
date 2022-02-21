@@ -1,0 +1,29 @@
+.c-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 5% 20px 5%; }
+  .c-footer__title {
+    text-transform: uppercase;
+    font-family: 'BrunoAceSC';
+    font-size: 2.5rem;
+    color: black; }
+    .c-footer__title:hover {
+      text-decoration: underline black; }
+  .c-footer__class {
+    font-family: 'Cambay', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    color: black; }
+  .c-footer__footer-menu {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: right;
+    font-family: 'Cambay', sans-serif;
+    font-size: 1.5rem; }
+  .c-footer__menu-items {
+    padding: 0.2rem 0;
+    color: black; }
+    .c-footer__menu-items:hover {
+      text-decoration: underline black; }
+
+/*# sourceMappingURL=footer.css.map */
