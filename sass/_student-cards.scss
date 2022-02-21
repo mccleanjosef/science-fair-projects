@@ -1,0 +1,29 @@
+.c-student-cards{
+    display: flex;
+    flex-flow: row wrap;
+    background: blue;
+    &__card{
+        background-color: rgb(66, 223, 35);
+        padding: 3px 12px;
+        width: 33.33333333333333%;
+        height: 411px;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        border: none;
+        border-radius: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-family: 'BrunoAceSC';
+        position: relative;
+    }
+    &__darken{
+        width: 10vw;
+        height: 10vh;
+        background: rgba(0,0,0,1);
+    }
+    &__name{
+        font-size: 4.4rem;
+    }
+}

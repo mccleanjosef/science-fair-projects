@@ -53,11 +53,8 @@ $('document').ready(function(){
         for(i = 0; i < data.studentNames.length; i++){
           generateCard(i);
 
-          console.log(data.studentImages[1]);
+          // cardImage[i].style.backgroundImage = "url(" + data.studentImages[i] + ")";
 
-          cardImage[i].style.backgroundColor = data.studentImages[i];
-
-          // document.getElementsByClassName("c-student-cards__card").style.backgroundImage = "url(" + data.studentImages[i] + ")";
         }
         // modal();
           
@@ -68,7 +65,8 @@ $('document').ready(function(){
         $('#cardCtn').append(
             `
             <div class="card c-student-cards__card">
-              <h2>${data.studentNames[x]}</h2>
+              <div c-student-cards__darken></div>
+              <h2 class="c-student-cards__name">${data.studentNames[x]}</h2>
             </div>
             `
         );
