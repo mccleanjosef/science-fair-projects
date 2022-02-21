@@ -1,3 +1,6 @@
+@font-face {
+  font-family: 'BrunoAceSC';
+  src: url(../fonts/bruno_ace_sc_regular.ttf) format("truetype"); }
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +17,25 @@ html {
     padding-right: 5rem;
     padding-left: 2rem;
     color: white;
-    font-family: 'Bangers', cursive;
     font-size: 5rem;
     font-weight: bold; }
+
+.navbar-collapse {
+  font-family: 'Bangers', cursive;
+  font-size: 3rem; }
+
+.dropdown-item {
+  font-size: 2rem; }
+
+.dropdown-menu {
+  padding: 2rem; }
+
+.btn {
+  font-size: 2rem;
+  margin-right: 2rem; }
+
+.form-control {
+  font-size: 2rem; }
 
 .carousel-container {
   width: 600px;
@@ -110,7 +129,7 @@ html {
     background: rgba(0, 0, 0, 0.3);
     position: absolute; }
   .c-student-cards__name {
-    font-family: 'BrunoAceSC';
+    font-family: 'BrunoAceSC', sans-serif;
     font-size: 4.4rem;
     color: white;
     z-index: 1;
@@ -122,7 +141,7 @@ html {
   padding: 35px 5% 20px 5%; }
   .c-footer__title {
     text-transform: uppercase;
-    font-family: 'BrunoAceSC';
+    font-family: 'BrunoAceSC', sans-serif;
     font-size: 2.5rem;
     color: black; }
     .c-footer__title:hover {
@@ -143,9 +162,5 @@ html {
     color: black; }
     .c-footer__menu-items:hover {
       text-decoration: underline black; }
-
-@font-face {
-  font-family: BrunoAceSC;
-  src: url(../fonts/bruno_ace_sc_regular.ttf); }
 
 /*# sourceMappingURL=style.css.map */
