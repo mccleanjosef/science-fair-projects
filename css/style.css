@@ -158,6 +158,23 @@ html {
 @font-face {
   font-family: BrunoAceSC;
   src: url(../fonts/bruno_ace_sc_regular.ttf); }
+.card-body {
+  display: flex;
+  flex-direction: row; }
+  .card-body__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 1em; }
+  .card-body-heading {
+    font-family: BrunoAceSC, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem; }
+  .card-body-info {
+    font-family: 'Cambay', sans-serif;
+    font-size: 1.6rem;
+    margin-right: 1em; }
+
 @font-face {
   font-family: BrunoAceSC;
   src: url(../fonts/bruno_ace_sc_regular.ttf); }
