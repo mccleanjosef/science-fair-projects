@@ -73,6 +73,22 @@ html {
 .main {
   display: block; }
 
+.header {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background: url("../img/heroImage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .header__heading {
+    grid-row: 4/5;
+    grid-column: 2/5; }
+  .header__subheading {
+    grid-row: 5/6;
+    grid-column: 2/5; }
+
 .c-student-cards {
   display: flex;
   flex-flow: row wrap; }
