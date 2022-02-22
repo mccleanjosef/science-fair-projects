@@ -13,6 +13,7 @@
         background-size: cover;
         background-position: center;
         position: relative;
+        cursor: pointer;
     }
     &__darken{
         width: 100%;
@@ -21,7 +22,7 @@
         position: absolute;
     }
     &__name{
-        font-family: 'BrunoAceSC';
+        font-family: 'BrunoAceSC', sans-serif;
         font-size: 4.4rem;
         color: white;
         z-index: 1;
