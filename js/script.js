@@ -88,6 +88,30 @@ $('document').ready(function(){
                 </button>
                 `
               );
+              $(".info-left").empty().append(
+                `
+                <h3 class="card-body-heading">${data[i].studentName}</h3>
+                <p class="card-body-info">${data[i].studentInfo}</p>
+                `
+              );
+              $(".project-one").empty().append(
+                `
+                <h3 class="card-body-heading">${data[i].projectOneName}</h3>
+                <p class="card-body-info">${data[i].projectOneInfo}</p>
+                `
+              );
+              $(".project-two").empty().append(
+                `
+                <h3 class="card-body-heading">${data[i].projectTwoName}</h3>
+                <p class="card-body-info">${data[i].projectTwoInfo}</p>
+                `
+              );
+              $(".project-three").empty().append(
+                `
+                <h3 class="card-body-heading">${data[i].projectThreeName}</h3>
+                <p class="card-body-info">${data[i].projectThreeInfo}</p>
+                `
+              );
             }
             
           }
