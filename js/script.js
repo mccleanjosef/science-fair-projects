@@ -44,19 +44,20 @@ $('document').ready(function(){
     type: "GET",
     url: "./json/students.json",
     success: function(data){
-      console.log(data.studentNames);
 
       function studentLoop(){
         const cardImage = document.getElementsByClassName("c-student-cards__card");
 
         let i = 0;
-        for(i = 0; i < data.studentNames.length; i++){
+        for(i = 0; i < data.length; i++){
+          // console.log(data.length);
+
           generateCard(i);
 
-          cardImage[i].style.backgroundImage = "url(" + data.studentImages[i] + ")";
+          cardImage[i].style.backgroundImage = "url(" + data[i].studentImage + ")";
 
         }
-        modal(i);
+        modal();
           
       }
       studentLoop();
@@ -64,28 +65,33 @@ $('document').ready(function(){
       function generateCard(x){
         $('#cardCtn').append(
             `
-            <div id="${data.studentId[x]}" class="card c-student-cards__card moreInformation" data-toggle="modal" data-target="#exampleModal">
+            <div id="${data[x].studentId}" class="card c-student-cards__card" data-toggle="modal" data-target="#exampleModal">
               <div class="c-student-cards__darken"></div>
-              <h2 class="c-student-cards__name">${data.studentNames[x]}</h2>
+              <h2 class="c-student-cards__name">${data[x].studentName}</h2>
             </div>
             `
         );
       }
 
-      function modal(x){
-        $(".moreInformation").click(function(){
-          let f = 0;
-          for(f = 0; f < data.studentId.length; f++){
-           
-            if(parseInt(this.id) === data.studentId[f])
-            console.log("heyBro");
-            $(".modal-header").empty().append(
-              `
-              <h5 class="modal-title" id="exampleModalLabel">${data.studentNames[x]}</h5>
-              `
-            )
+      function modal(){
+        $(".c-student-cards__card").click(function(){
+          
+          let i = 0;
+          for(i = 0; i < data.length; i++){
+
+            if(parseInt(this.id) === data[i].studentId){
+              $("#modalHeader").empty().append(
+                `
+                <h5 class="modal-title">${data[i].studentName}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                `
+              );
+            }
+            
           }
-        })
+        });
       }
 
 
