@@ -7,6 +7,14 @@
         "NATHAN K.",
         "SAMIRA W."
     ],
+    "studentId": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+    ],
     "studentImages": [
         "https://images.pexels.com/photos/7105850/pexels-photo-7105850.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         "https://images.pexels.com/photos/7869235/pexels-photo-7869235.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
