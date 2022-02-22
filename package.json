@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.8"
+  },
+  "name": "science-fair-projects",
+  "version": "1.0.0",
+  "description": "science-fair-projects",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mccleanjosef/science-fair-projects.git"
+  },
+  "author": "Josef, Daniel, Zack, Justine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mccleanjosef/science-fair-projects/issues"
+  },
+  "homepage": "https://github.com/mccleanjosef/science-fair-projects#readme"
+}
