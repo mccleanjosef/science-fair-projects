@@ -1,0 +1,23 @@
+.card-body{
+    display: flex;
+    flex-direction: row;
+
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 1em;
+    }
+
+    &-heading{
+        font-family: BrunoAceSC, sans-serif;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    &-info{
+        font-family: 'Cambay', sans-serif;
+        font-size: 1.6rem;
+        margin-right: 1em;
+    }
+}

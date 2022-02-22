@@ -220,3 +220,20 @@ html {
 .c-footer__menu-items:hover {
   text-decoration: underline black;
 }
+
+.card-body {
+  display: flex;
+  flex-direction: row; }
+  .card-body__left {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 1em; }
+  .card-body-heading {
+    font-family: BrunoAceSC, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem; }
+  .card-body-info {
+    font-family: 'Cambay', sans-serif;
+    font-size: 1.6rem;
+    margin-right: 1em; }
