@@ -1,3 +1,7 @@
+@font-face {
+  font-family: BrunoAceSC;
+  src: url(../fonts/bruno_ace_sc_regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +15,15 @@ html {
 
 .navigation {
   height: 10vh;
-  font-size: 2rem;
 }
 .navigation__header {
-  padding-right: 5rem;
+  width: 35%;
   padding-left: 2rem;
   color: white;
   font-family: BrunoAceSC, sans-serif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
+  line-height: 1;
 }
 .navigation__header:hover {
   color: lightgray;
@@ -27,8 +31,28 @@ html {
 }
 
 .navbar-collapse {
+  width: 55%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+}
+
+.navbar-nav {
+  width: 65%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.form-inline {
+  width: 31%;
+}
+
+.nav-item {
+  font-size: 2.5rem;
   font-family: "Bangers", cursive;
-  font-size: 3rem;
+  padding: 0 2%;
 }
 
 .dropdown-item {
@@ -36,18 +60,30 @@ html {
 }
 
 .dropdown-menu {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .btn {
-  font-size: 2rem;
-  margin-right: 2rem;
+  font-size: 1.5rem;
 }
 
 .form-control {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
+/* Large Devices (Laptop/Desktop) */
+/* Medium Devices (Tablets) */
+@media (min-width:601px) and (max-width:1023px) {
+  .navigation__header {
+    font-size: 3rem;
+  }
+}
+/* Small Devices (Mobile) */
+@media (max-width: 600px) {
+  .navigation__header {
+    font-size: 3rem;
+  }
+}
 .carousel-container {
   width: 600px;
   height: 400px;
@@ -173,6 +209,11 @@ html {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.c-student-cards__darken:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 .c-student-cards__name {
   font-family: "BrunoAceSC", sans-serif;
@@ -217,10 +258,6 @@ html {
   text-decoration: underline black;
 }
 
-@font-face {
-  font-family: BrunoAceSC;
-  src: url(../fonts/bruno_ace_sc_regular.ttf);
-}
 .card-body {
   display: flex;
   flex-direction: row;
@@ -240,9 +277,4 @@ html {
   font-family: "Cambay", sans-serif;
   font-size: 1.6rem;
   margin-right: 1em;
-}
-
-@font-face {
-  font-family: BrunoAceSC;
-  src: url(../fonts/bruno_ace_sc_regular.ttf);
 }
