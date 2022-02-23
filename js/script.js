@@ -2,8 +2,6 @@ $('document').ready(function(){
 
   console.log("script is linked");
 
-  console.log("yes");
-
   // start of student-cards
   $.ajax({
     type: "GET",
@@ -77,6 +75,26 @@ $('document').ready(function(){
                 <p class="card-body-info">${data[i].projectThreeInfo}</p>
                 `
               );
+              $(".student-image").empty().append(
+                `
+                <img src=${data[i].studentImage} alt="Image of student" />
+                `
+              );
+              $(".project-image-one").empty().append(
+                `
+                <img src=${data[i].projectOneImage} alt="Project 1" />
+                `
+              );
+              $(".project-image-two").empty().append(
+                `
+                <img src=${data[i].projectTwoImage} alt="Project 2" />
+                `
+              );
+              $(".project-image-three").empty().append(
+                `
+                <img src=${data[i].projectThreeImage} alt="Project 3" />
+                `
+              );
             }
             
           }
@@ -87,6 +105,42 @@ $('document').ready(function(){
     }
   });
   // end of student-cards
+
+  // start of image-slider
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  const images = document.querySelector('.carousel').children;
+  const totalImages = images.length;
+  let index = 0;
+
+  prev.addEventListener('click', () => {
+    nextImage('next');
+  })
+
+  next.addEventListener('click', () => {
+    nextImage('prev');
+  })
+
+  function nextImage(direction) {
+    if(direction == 'next') {
+      index++;
+      if(index == totalImages) {
+        index = 0;
+      }
+    } else {
+      if(index == 0) {
+        index = totalImages - 1;
+      } else {
+        index--;
+      }
+    }
+
+    for(let i = 0; i < images.length; i++) {
+      images[i].classList.remove('main');
+    }
+    images[index].classList.add('main');
+  }
+  // end of image-slider
 
 
 });
