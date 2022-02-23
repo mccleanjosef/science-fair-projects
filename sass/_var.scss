@@ -1,6 +1,11 @@
-$display-font: BrunoAceSC, sans-serif;
+// media queries
+$mobile: "(max-width: 600px)";
+$tablet: "(min-width:601px) and (max-width:1023px)";
+$desktop: "(min-width:1024px)";
 
 @font-face {
     font-family: BrunoAceSC;
     src: url(../fonts/bruno_ace_sc_regular.ttf);
 }
+
+$display-font: BrunoAceSC, sans-serif;

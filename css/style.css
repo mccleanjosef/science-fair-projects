@@ -1,3 +1,7 @@
+@font-face {
+  font-family: BrunoAceSC;
+  src: url(../fonts/bruno_ace_sc_regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,35 +13,74 @@ html {
 
 .navigation {
   height: 10vh;
-  font-size: 2rem; }
-  .navigation__header {
-    padding-right: 5rem;
-    padding-left: 2rem;
-    color: white;
-    font-family: BrunoAceSC, sans-serif;
-    font-size: 5rem;
-    font-weight: bold; }
-    .navigation__header:hover {
-      color: lightgray;
-      text-decoration: underline lightgrey; }
+}
+.navigation__header {
+  width: 35%;
+  padding-left: 2rem;
+  color: white;
+  font-family: BrunoAceSC, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.navigation__header:hover {
+  color: lightgray;
+  text-decoration: underline lightgrey;
+}
 
 .navbar-collapse {
-  font-family: 'Bangers', cursive;
-  font-size: 3rem; }
+  width: 55%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+}
+
+.navbar-nav {
+  width: 65%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+
+.form-inline {
+  width: 31%;
+}
+
+.nav-item {
+  font-size: 2.5rem;
+  font-family: "Bangers", cursive;
+  padding: 0 2%;
+}
 
 .dropdown-item {
   font-size: 2rem; }
 
 .dropdown-menu {
-  padding: 2rem; }
+  padding: 1.5rem;
+}
 
 .btn {
-  font-size: 2rem;
-  margin-right: 2rem; }
+  font-size: 1.5rem;
+}
 
 .form-control {
-  font-size: 2rem; }
+  font-size: 1.5rem;
+}
 
+/* Large Devices (Laptop/Desktop) */
+/* Medium Devices (Tablets) */
+@media (min-width:601px) and (max-width:1023px) {
+  .navigation__header {
+    font-size: 3rem;
+  }
+}
+/* Small Devices (Mobile) */
+@media (max-width: 600px) {
+  .navigation__header {
+    font-size: 3rem;
+  }
+}
 .carousel-container {
   width: 600px;
   height: 400px;
@@ -127,31 +170,40 @@ html {
 
 .c-student-cards {
   display: flex;
-  flex-flow: row wrap; }
-  .c-student-cards__card {
-    width: 33.33333333333333%;
-    height: 411px;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    border: none;
-    border-radius: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    cursor: pointer; }
-  .c-student-cards__darken {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute; }
-  .c-student-cards__name {
-    font-family: 'BrunoAceSC', sans-serif;
-    font-size: 4.4rem;
-    color: white;
-    z-index: 1;
-    padding-right: 15px; }
+  flex-flow: row wrap;
+}
+.c-student-cards__card {
+  width: 33.3333333333%;
+  height: 411px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  border: none;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+}
+.c-student-cards__darken {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.c-student-cards__darken:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.c-student-cards__name {
+  font-family: "BrunoAceSC", sans-serif;
+  font-size: 4.4rem;
+  color: white;
+  z-index: 1;
+  padding-right: 15px;
+}
 
 .c-footer {
   display: flex;
@@ -181,63 +233,23 @@ html {
     .c-footer__menu-items:hover {
       text-decoration: underline black; }
 
-@font-face {
-  font-family: BrunoAceSC;
-  src: url(../fonts/bruno_ace_sc_regular.ttf); }
 .card-body {
   display: flex;
-  flex-direction: row; }
-  .card-body__left {
-    flex-basis: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    margin-top: 1em; }
-  .card-body-heading {
-    font-family: BrunoAceSC, sans-serif;
-    text-transform: uppercase;
-    font-size: 2.5rem; }
-  .card-body-info {
-    font-family: 'Cambay', sans-serif;
-    font-size: 1.6rem;
-    margin-right: 1em; }
-
-.btn {
-  text-decoration: none; }
-
-.modal-title {
+  flex-direction: row;
+}
+.card-body__left {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 1em;
+}
+.card-body-heading {
   font-family: BrunoAceSC, sans-serif;
-  font-size: 2rem; }
-
-.c-student-cards__card:hover {
-  animation: shake 0.5s ease-in;
-  animation-iteration-count: infinite; }
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg); }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg); }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg); }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg); }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg); }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg); }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg); }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg); }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg); }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg); }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg); } }
-@font-face {
-  font-family: BrunoAceSC;
-  src: url(../fonts/bruno_ace_sc_regular.ttf); }
-
-/*# sourceMappingURL=style.css.map */
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.card-body-info {
+  font-family: "Cambay", sans-serif;
+  font-size: 1.6rem;
+  margin-right: 1em;
+}

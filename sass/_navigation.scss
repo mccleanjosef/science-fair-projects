@@ -1,14 +1,13 @@
 .navigation{
     height: 10vh;
-    font-size: 2rem;
-
     &__header{
-        padding-right: 5rem;
+        width: 35%;
         padding-left: 2rem;
         color: white;
         font-family: BrunoAceSC, sans-serif;
-        font-size: 5rem;
+        font-size: 4rem;
         font-weight: bold;
+        line-height: 1;
         &:hover{
             color: lightgray;
             text-decoration: underline lightgrey;
@@ -17,23 +16,69 @@
 }
 
 .navbar-collapse{
-    font-family: 'Bangers', cursive;
-    font-size: 3rem;
+    width: 55%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
 }
+
+.navbar-nav{
+    width: 65%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.form-inline{
+    width: 31%;
+}
+
+.nav-item{
+    font-size: 2.5rem;
+    font-family: 'Bangers', cursive;
+    padding: 0 2%;
+}
+
+
 
 .dropdown-item{
     font-size: 2rem;
 }
 
 .dropdown-menu{
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 .btn{
-    font-size: 2rem;
-    margin-right: 2rem;
+    font-size: 1.5rem;
 }
 
 .form-control{
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+
+
+/* Large Devices (Laptop/Desktop) */
+@media #{$desktop}{
+
+}
+
+/* Medium Devices (Tablets) */
+@media #{$tablet} {
+    .navigation{
+        &__header{
+            font-size: 3rem;
+        }
+    }
+}
+
+/* Small Devices (Mobile) */
+@media #{$mobile}{
+    .navigation{
+        &__header{
+            font-size: 3rem;
+        }
+    }
 }
