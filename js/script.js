@@ -2,6 +2,8 @@ $('document').ready(function(){
 
   console.log("script is linked");
 
+  console.log("yes");
+
   // start of image-slider
   // const prev = document.querySelector('.prev');
   // const next = document.querySelector('.next');
